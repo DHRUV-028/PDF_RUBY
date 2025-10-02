@@ -1,0 +1,36 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Infos" %>
+
+
+
+
+<div id="infos">
+   <table id="table">
+       
+        <th>Order No</th>
+        <th>FirmName</th>
+        <th>Billno</th>
+        <th>Amount</th>
+        <th>Location</th>
+
+        
+
+  <% infos.each do |info| %>
+    <tbody>
+        <tr id="tr">
+        <td><%= info.orderNo %></td>
+        <td><%= info.firmName %></td>
+        <td><%= info.billNo %></td>
+        <td><%= info.amount %></td>
+        <td><%= info.location %></td>
+        </tr>
+    </tbody>
+ 
+    
+    
+  <% end %>
+  </table>
+</div>
+
+

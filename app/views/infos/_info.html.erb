@@ -1,0 +1,28 @@
+<div id="<%= dom_id info %>">
+  <p>
+    <strong>Orderno:</strong>
+    <%= info.orderNo %>
+  </p>
+
+  <p>
+    <strong>Firmname:</strong>
+    <%= info.firmName %>
+  </p>
+
+  <p>
+    <strong>Billno:</strong>
+    <%= info.billNo %>
+  </p>
+
+  <p>
+    <strong>Amount:</strong>
+    <%= info.amount %>
+  </p>
+
+  <p>
+    <strong>Location:</strong>
+    <%= info.location %>
+  </p>
+  <%=link_to "Pdf Infos", info_path(info,format: :pdf)%>
+
+</div>
